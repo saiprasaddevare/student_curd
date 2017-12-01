@@ -1,0 +1,24 @@
+<center><h1 class = "color_red"><%= @title%></h1></center>
+
+<% @view each do |t|%>
+<div class="jumbotron">
+
+ <center><table border =1>
+  <tr>
+   <td>ADMISSION NUMBER</td>
+   <td>NAME</td>
+   <td>GENDER</td>
+   <td>STANDARD</td>
+   </tr>
+     
+   <tr>
+   <td><%= t.adno%></td>&nbsp&nbsp
+   <td><%= t.name%></td>
+   <td><%= t.gender%></td>
+   <td><%= t.standard%></td>
+   </tr><br>
+  
+</table>
+ 
+</center></div>  
+<% end %>
